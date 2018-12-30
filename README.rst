@@ -3,7 +3,7 @@ zsh-nvm
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.0
+:Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-nvm
 :Download: http://github.com/luismayta/zsh-nvm
 :Source: http://github.com/luismayta/zsh-nvm
