@@ -6,7 +6,7 @@ Build
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.1.0
+:Version: 0.1.1
 :Web: https://github.com/luismayta/zsh-nvm
 :Download: https://github.com/luismayta/zsh-nvm
 :Source: https://github.com/luismayta/zsh-nvm
