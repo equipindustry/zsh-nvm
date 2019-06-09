@@ -56,7 +56,7 @@
     sha: 1.0.4
     hooks:
     -   id: shell-lint
-        exclude: ^extras/script/wait-for-it.sh$
+        exclude: ^provision/script/wait-for-it.sh$
         args:
         - --exclude=SC1072,SC1073,SC2068
 -   repo: https://github.com/asottile/add-trailing-comma
