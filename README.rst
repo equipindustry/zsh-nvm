@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm?ref=badge_shield)
+
 zsh-nvm
 =======
 
@@ -181,3 +183,6 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. _Python 3.7.3: https://www.python.org/downloads/release/python-373
 .. _Docker: https://www.docker.com/
 .. _Docker Compose: https://docs.docker.com/compose/
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm?ref=badge_large)
