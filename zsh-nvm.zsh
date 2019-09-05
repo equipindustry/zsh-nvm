@@ -30,6 +30,8 @@ function nvm::dependences {
     yarn global add lambda-pure-prompt
     yarn global add pure-prompt
     yarn global add prettier
+    yarn global add localtunnel
+
 }
 
 function nvm::load {
