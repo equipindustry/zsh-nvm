@@ -143,7 +143,7 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. Links
 .. _`changelog`: CHANGELOG.rst
 .. _`contributors`: AUTHORS
-.. _`contributing`: CONTRIBUTING.rst
+.. _`contributing`: docs/source/CONTRIBUTING.rst
 
 .. _`hadenlabs`: https://github.com/hadenlabs
 .. _`luis mayta`: https://github.com/luismayta
@@ -178,6 +178,6 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Dependences:
 
-.. _Python 3.6.4: https://www.python.org/downloads/release/python-364
+.. _Python 3.7.3: https://www.python.org/downloads/release/python-373
 .. _Docker: https://www.docker.com/
 .. _Docker Compose: https://docs.docker.com/compose/
