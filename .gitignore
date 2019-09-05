@@ -1,33 +1,24 @@
-.env
-# Static and media development files.
-media/
-src/assets/
-static/
-staticfiles/
+# Created by https://www.gitignore.io/api/cmake,python
+# Edit at https://www.gitignore.io/?templates=cmake,python
 
-# gulp-compass metafile
-css
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
 
-# Node metadata
-node_modules
+### CMake Patch ###
+# External projects
+*-prefix/
 
-# SASS metadata
-*.sass-cache
-
-# Bower directory
-bower_components
-
-# Local databases
-*.sqlite3
-
-# Test databases
-*.sqlite3*
-
-# Redis
-*.rdb
-
-*.bak
-.#*
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -38,8 +29,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
-.autoenv.zsh
 build/
 develop-eggs/
 dist/
@@ -50,9 +39,14 @@ lib/
 lib64/
 parts/
 sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -67,12 +61,15 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.nox/
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
-*,cover
+*.cover
+.hypothesis/
+.pytest_cache/
 
 # Translations
 *.mo
@@ -80,6 +77,15 @@ coverage.xml
 
 # Django stuff:
 *.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -87,30 +93,54 @@ docs/_build/
 # PyBuilder
 target/
 
-# ignored files Vagrant
-.vagrant
-# Files pid
-*.pid
-# files translate
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# files lock
-*.lock
-provision/ansible/roles/contrib
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don’t work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
 .env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-.autoenv.zsh*.retry
-*.retry
-.wercker/
-dumps
-*.retry
-;
-.terraform
-.backup
-*.backup
-*.tfstate
-terraform.tfstate.d
-*.out
-*.log
-*.aux
-*.pdf
-*.zip
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# End of https://www.gitignore.io/api/cmake,python
