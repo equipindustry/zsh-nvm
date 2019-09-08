@@ -31,6 +31,7 @@ function nvm::dependences {
     yarn global add pure-prompt
     yarn global add prettier
     yarn global add localtunnel
+    yarn global add typescript
 
 }
 
