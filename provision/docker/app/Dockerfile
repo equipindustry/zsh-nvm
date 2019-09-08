@@ -18,7 +18,7 @@ ENV PACKAGES bash \
   libev-dev
 
 
-COPY Pipfile Pipfile.lock /usr/src/
+COPY Pipfile* /usr/src/
 
 # set working directory to /usr/src/
 WORKDIR /usr/src/
@@ -32,4 +32,7 @@ RUN  groupadd -g 500 -r python \
   && apt-get update -y \
   && apt-get install -y $PACKAGES \
   && pip3 install pipenv \
-  && pipenv install --ignore-pipfile --system
+  && pipenv install --dev \
+  && pipenv shell --fancy \
+  && apt-get purge \
+  && rm -rf /var/lib/apt/lists/*
