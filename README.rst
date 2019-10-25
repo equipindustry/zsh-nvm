@@ -1,9 +1,6 @@
 zsh-nvm
 =======
 
-Build
------
-
 |Build Status| |GitHub issues| |GitHub license| |Fossa|
 
 :Version: 0.1.1
@@ -180,6 +177,5 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Dependences:
 
-.. _Python 3.7.3: https://www.python.org/downloads/release/python-373
+.. _Pyenv: https://github.com/pyenv/pyenv
 .. _Docker: https://www.docker.com/
-.. _Docker Compose: https://docs.docker.com/compose/
