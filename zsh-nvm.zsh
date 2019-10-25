@@ -18,7 +18,7 @@ function nvm::dependences {
 
 function nvm::install {
     nvm::dependences
-    if [[ ! -e "$HOME/.nvm" ]]; then
+    if [[ ! -e "${HOME}/.nvm" ]]; then
         echo -e "${CLEAR}${LIGHT_GREEN}Installing NVM${CLEAR}"
         curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     fi
@@ -26,29 +26,25 @@ function nvm::install {
 }
 
 function nvm::post_install {
-    echo -e "${CLEAR}${LIGHT_GREEN}Installing Dependences${CLEAR}"
     nvm install 12.13.0
     nvm use 12.13.0 --default
     npm install --global yarn
-    yarn global add lambda-pure-prompt
-    yarn global add pure-prompt
-    yarn global add prettier
-    yarn global add localtunnel
-    yarn global add typescript
+    yarn global add \
+       lambda-pure-prompt pure-prompt prettier localtunnel typescript
 }
 
 function nvm::load {
-if [ -e "${HOME}/.nvm" ]; then
-    [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
-    # shellcheck source=/dev/null
-    [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh"  # This loads nvm
-    # shellcheck source=/dev/null
-    [ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
-fi
+    if [ -e "${HOME}/.nvm" ]; then
+        [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
+        # shellcheck source=/dev/null
+        [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh"  # This loads nvm
+        # shellcheck source=/dev/null
+        [ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
+    fi
 }
 
 nvm::load
 
-if [[ ! -x "$(command which nvm)" ]]; then
+if [ ! -e "${HOME}/.nvm" ]; then
     nvm::install
 fi
