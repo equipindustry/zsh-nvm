@@ -27,10 +27,14 @@ function nvm::install {
 
 function nvm::post_install {
     nvm install 12.13.0
+    nvm install 10.16.3
+
     nvm use 12.13.0 --default
     npm install --global yarn
     yarn global add \
-       lambda-pure-prompt pure-prompt prettier localtunnel typescript
+       lambda-pure-prompt pure-prompt prettier \
+       localtunnel typescript \
+       next webpack
 }
 
 function nvm::load {
