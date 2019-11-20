@@ -46,11 +46,12 @@ function nvm::post_install {
 }
 
 function nvm::load {
-    if [ -e "${HOME}/.nvm" ]; then
-        PATH=$(get_path)
+    PATH=$(get_path)
+    [ -e "${HOME}/.yarn/bin" ] && export PATH="$PATH:$HOME/.yarn/bin"
+    if ! type -p nvm >/dev/null; then
         [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
         # shellcheck source=/dev/null
-        [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh"  # This loads nvm
+        [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh" --no-use # This loads nvm
         # shellcheck source=/dev/null
         [ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
     fi
