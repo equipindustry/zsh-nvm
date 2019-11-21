@@ -8,29 +8,30 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 
-package_name=nvm
+nvm_package_name=nvm
 
 plugin_dir=$(dirname "${0}":A)
 
 # shellcheck source=/dev/null
 source "${plugin_dir}"/src/helpers/messages.zsh
+
 # shellcheck source=/dev/null
 source "${plugin_dir}"/src/helpers/tools.zsh
 
 function nvm::dependences {
-    message_info "Installing dependences for ${package_name}"
-    message_success "Installed dependences for ${package_name}"
+    message_info "Installing dependences for ${nvm_package_name}"
+    message_success "Installed dependences for ${nvm_package_name}"
 }
 
 function nvm::install {
     nvm::dependences
-    message_info "Installing ${package_name}"
+    message_info "Installing ${nvm_package_name}"
     curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    message_success "Installed ${package_name}"
+    message_success "Installed ${nvm_package_name}"
 }
 
 function nvm::post_install {
-    message_info "Post Install ${package_name}"
+    message_info "Post Install ${nvm_package_name}"
 
     nvm install 12.13.0
     nvm install 10.16.3
@@ -42,7 +43,7 @@ function nvm::post_install {
        localtunnel typescript \
        next webpack
 
-    message_success "Success Install ${package_name}"
+    message_success "Success Install ${nvm_package_name}"
 }
 
 function nvm::load {
