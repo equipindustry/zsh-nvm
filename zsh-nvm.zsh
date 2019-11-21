@@ -46,8 +46,7 @@ function nvm::post_install {
 }
 
 function nvm::load {
-    PATH=$(get_path)
-    [ -e "${HOME}/.yarn/bin" ] && export PATH="$PATH:$HOME/.yarn/bin"
+    path::append "${HOME}/.yarn/bin"
     if ! type -p nvm >/dev/null; then
         [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
         # shellcheck source=/dev/null
