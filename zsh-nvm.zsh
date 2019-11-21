@@ -39,22 +39,23 @@ function nvm::post_install {
     nvm use 12.13.0 --default
     npm install --global yarn
     yarn global add \
-       lambda-pure-prompt pure-prompt prettier \
-       localtunnel typescript \
-       next webpack
+        lambda-pure-prompt \
+        pure-prompt prettier \
+        localtunnel typescript \
+        next webpack \
+        standardx \
+        javascript-typescript-langserver
 
     message_success "Success Install ${nvm_package_name}"
 }
 
 function nvm::load {
     path::append "${HOME}/.yarn/bin"
-    if ! type -p nvm >/dev/null; then
-        [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
-        # shellcheck source=/dev/null
-        [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh" --no-use # This loads nvm
-        # shellcheck source=/dev/null
-        [ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
-    fi
+    [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
+    # shellcheck source=/dev/null
+    [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh" # This loads nvm
+    # shellcheck source=/dev/null
+    [ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
 }
 
 nvm::load
