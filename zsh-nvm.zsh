@@ -7,7 +7,6 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 #
-
 nvm_package_name=nvm
 
 plugin_dir=$(dirname "${0}":A)
@@ -23,20 +22,8 @@ function nvm::dependences {
     message_success "Installed dependences for ${nvm_package_name}"
 }
 
-function nvm::install {
-    nvm::dependences
-    message_info "Installing ${nvm_package_name}"
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    message_success "Installed ${nvm_package_name}"
-}
-
-function nvm::post_install {
-    message_info "Post Install ${nvm_package_name}"
-
-    nvm install 12.13.0
-    nvm install 10.16.3
-
-    nvm use 12.13.0 --default
+function nvm::packages {
+    message_info "Install packages for ${nvm_package_name}"
     npm install --global yarn
     yarn global add \
         lambda-pure-prompt \
@@ -46,6 +33,25 @@ function nvm::post_install {
         standardx \
         javascript-typescript-langserver
 
+    message_success "Installed packages for ${nvm_package_name}"
+}
+
+function nvm::install {
+    nvm::dependences
+    message_info "Installing ${nvm_package_name}"
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+    message_success "Installed ${nvm_package_name}"
+}
+
+function nvm::post_install {
+    message_info "Post Install ${nvm_package_name}"
+    if [ -e "${HOME}/.nvm" ]; then
+        nvm install 12.13.0
+        nvm install 10.16.3
+        nvm use 12.13.0 --default
+    else
+        nvm::install
+    fi
     message_success "Success Install ${nvm_package_name}"
 }
 
