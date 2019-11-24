@@ -9,13 +9,13 @@
 #
 nvm_package_name=nvm
 
-plugin_dir=$(dirname "${0}":A)
+ZSH_NVM_PATH_ROOT=$(dirname "${0}":A)
 
 # shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/messages.zsh
+source "${ZSH_NVM_PATH_ROOT}"/src/helpers/messages.zsh
 
 # shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/tools.zsh
+source "${ZSH_NVM_PATH_ROOT}"/src/helpers/tools.zsh
 
 function nvm::dependences {
     message_info "Installing dependences for ${nvm_package_name}"
