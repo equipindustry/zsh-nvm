@@ -31,7 +31,8 @@ function nvm::packages {
         localtunnel typescript \
         next webpack \
         standardx \
-        javascript-typescript-langserver
+        javascript-typescript-langserver \
+        bit-bin
 
     message_success "Installed packages for ${nvm_package_name}"
 }
