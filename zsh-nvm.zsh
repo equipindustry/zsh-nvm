@@ -9,14 +9,6 @@
 #
 nvm_package_name=nvm
 
-ZSH_NVM_PATH_ROOT=$(dirname "${0}":A)
-
-# shellcheck source=/dev/null
-source "${ZSH_NVM_PATH_ROOT}"/src/helpers/messages.zsh
-
-# shellcheck source=/dev/null
-source "${ZSH_NVM_PATH_ROOT}"/src/helpers/tools.zsh
-
 function nvm::dependences {
     message_info "Installing dependences for ${nvm_package_name}"
     message_success "Installed dependences for ${nvm_package_name}"
@@ -57,7 +49,7 @@ function nvm::post_install {
 }
 
 function nvm::load {
-    path::append "${HOME}/.yarn/bin"
+    path_append "${HOME}/.yarn/bin"
     [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
     # shellcheck source=/dev/null
     [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh" # This loads nvm
