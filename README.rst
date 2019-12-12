@@ -4,9 +4,9 @@ zsh-nvm
 |Build Status| |GitHub issues| |GitHub license| |Fossa|
 
 :Version: 0.1.1
-:Web: https://github.com/luismayta/zsh-nvm
-:Download: https://github.com/luismayta/zsh-nvm
-:Source: https://github.com/luismayta/zsh-nvm
+:Web: https://github.com/equipindustry/zsh-nvm
+:Download: https://github.com/equipindustry/zsh-nvm
+:Source: https://github.com/equipindustry/zsh-nvm
 :Keywords: zsh-nvm
 
 .. contents:: Table of Contents:
@@ -39,7 +39,7 @@ plugin by doing the following:
 1. Go to your oh-my-zsh custom plugins directory -
    ``cd ~/.oh-my-zsh/custom/plugins``
 2. Clone the plugin
-   ``bash   git clone https://github.com/luismayta/zsh-nvm``\ bash
+   ``bash   git clone https://github.com/equipindustry/zsh-nvm``\ bash
 3. Edit your ``.zshrc`` and add
    ``plugins=( ... zsh-nvm )`` to your list of
    plugins
@@ -51,10 +51,10 @@ plugin by doing the following:
 If you're using `Antigen <https://github.com/zsh-lovers/antigen>`__,
 install this plugin by doing the following:
 
-1. Add ``antigen bundle luismayta/zsh-nvm`` to your
+1. Add ``antigen bundle equipindustry/zsh-nvm`` to your
    ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antigen bundle luismayta/zsh-nvm`` in a
+   run ``antigen bundle equipindustry/zsh-nvm`` in a
    running zsh session.
 3. Enjoy!
 
@@ -68,11 +68,11 @@ install this plugin by doing the following:
 
     .. code-block:: bash
 
-        antibody bundle luismayta/zsh-nvm
+        antibody bundle equipindustry/zsh-nvm
 
     to your ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antibody bundle luismayta/zsh-nvm`` in a
+   run ``antibody bundle equipindustry/zsh-nvm`` in a
    running zsh session.
 3. Enjoy!
 
@@ -163,10 +163,10 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. _`Website`: http://luismayta.github.io
 .. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
 
-.. |Build Status| image:: https://travis-ci.org/luismayta/zsh-nvm.svg
-   :target: https://travis-ci.org/luismayta/zsh-nvm
-.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/zsh-nvm.svg
-   :target: https://github.com/luismayta/zsh-nvm/issues
+.. |Build Status| image:: https://travis-ci.org/equipindustry/zsh-nvm.svg
+   :target: https://travis-ci.org/equipindustry/zsh-nvm
+.. |GitHub issues| image:: https://img.shields.io/github/issues/equipindustry/zsh-nvm.svg
+   :target: https://github.com/equipindustry/zsh-nvm/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
 .. |Fossa| image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm.svg?type=shield
@@ -179,8 +179,8 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
    :target: http://pe.linkedin.com/in/luismayta
-.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-nvm/readme
-   :target: https://github.com/luismayta/zsh-nvm
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/equipindustry/zsh-nvm/readme
+   :target: https://github.com/equipindustry/zsh-nvm
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
    :target: http://www.zsh.org
 
