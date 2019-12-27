@@ -42,7 +42,9 @@ function nvm::post_install {
     if [ -e "${HOME}/.nvm" ]; then
         nvm install 12.13.0
         nvm install 10.16.3
-        nvm use 12.13.0 --default
+        nvm install 12.13.0
+        nvm install --lts
+        nvm use --lts --default
     else
         nvm::install
     fi
