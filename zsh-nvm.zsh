@@ -24,7 +24,8 @@ function nvm::packages {
         next webpack \
         standardx \
         javascript-typescript-langserver \
-        bit-bin
+        bit-bin \
+        codesandbox
 
     message_success "Installed packages for ${nvm_package_name}"
 }
