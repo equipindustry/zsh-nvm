@@ -24,6 +24,7 @@ function nvm::packages {
         next webpack \
         standardx \
         javascript-typescript-langserver \
+        js-to-ts-converter /
         bit-bin \
         codesandbox
 
