@@ -24,8 +24,9 @@ function nvm::packages {
         next webpack \
         standardx \
         javascript-typescript-langserver \
-        js-to-ts-converter /
+        js-to-ts-converter \
         bit-bin \
+        @compare/github \
         codesandbox
 
     message_success "Installed packages for ${nvm_package_name}"
