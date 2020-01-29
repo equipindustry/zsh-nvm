@@ -8,6 +8,7 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 nvm_package_name=nvm
+export YARN_PATH="${HOME}"/.yarn
 
 function nvm::dependences {
     message_info "Installing dependences for ${nvm_package_name}"
@@ -54,7 +55,7 @@ function nvm::post_install {
 }
 
 function nvm::load {
-    path_append "${HOME}/.yarn/bin"
+    [ -e "${YARN_PATH}/bin" ] && export PATH="${PATH}:${YARN_PATH}/bin"
     [ -e "${HOME}/.nvm" ] && export NVM_DIR="${HOME}/.nvm"  # This loads nvm
     # shellcheck source=/dev/null
     [ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh" # This loads nvm
