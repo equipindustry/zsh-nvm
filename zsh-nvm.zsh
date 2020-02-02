@@ -44,16 +44,14 @@ function nvm::install {
 }
 
 function nvm::post_install {
-    message_info "Post Install ${nvm_package_name}"
-    if [ -e "${HOME}/.nvm" ]; then
-        nvm install 12.13.0
-        nvm install 10.16.3
-        nvm install 12.13.0
-        nvm install --lts
-        nvm use --lts --default
-    else
+    if [ ! -e "${HOME}/.nvm" ]; then
         nvm::install
     fi
+    message_info "Post Install ${nvm_package_name}"
+    nvm install 12.13.0
+    nvm install 10.16.3
+    nvm install --lts
+    nvm use --lts --default
     message_success "Success Install ${nvm_package_name}"
 }
 
