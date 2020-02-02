@@ -17,7 +17,9 @@ function nvm::dependences {
 
 function nvm::packages {
     message_info "Install packages for ${nvm_package_name}"
+
     npm install --global yarn
+
     yarn global add \
         lambda-pure-prompt \
         pure-prompt prettier \
@@ -25,6 +27,7 @@ function nvm::packages {
         next webpack \
         standardx \
         javascript-typescript-langserver \
+        npm-check-updates \
         js-to-ts-converter \
         bit-bin \
         @compare/github \
