@@ -31,7 +31,8 @@ function nvm::packages {
         js-to-ts-converter \
         bit-bin \
         @compare/github \
-        codesandbox
+        codesandbox \
+        commitizen
 
     message_success "Installed packages for ${nvm_package_name}"
 }
