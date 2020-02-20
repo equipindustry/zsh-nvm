@@ -8,25 +8,32 @@
   "scripts": {
     "semantic-release": "semantic-release",
     "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,yml}' --write --list-different",
-    "prettier-check": "yarn prettier -- --write=false"
+    "prettier-check": "yarn prettier -- --write=false",
+    "precommit": "lint-staged"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^4.2.1",
+    "@equipindustry/eslint-config": "^0.2.0",
+    "@equipindustry/prettierrc": "^0.1.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "babel-eslint": "^10.0.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
-    "semantic-release": "^17.0.2"
+    "semantic-release": "^17.0.4",
+    "typescript": "^3.7.5"
   },
-  "dependencies": {
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn precommit"
+    }
   }
 }
