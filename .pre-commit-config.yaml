@@ -107,11 +107,3 @@ repos:
     rev: 1.19.1 # Use the sha or tag you want to point at
     hooks:
       - id: prettier
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v7.0.0-alpha.1
-    hooks:
-      - id: eslint
-        additional_dependencies:
-          - eslint
-          - eslint-plugin-prettier
-          - prettier
