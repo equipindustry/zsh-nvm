@@ -241,10 +241,10 @@
     eslint-plugin-react "^7.18.3"
     eslint-plugin-react-hooks "^2.3.0"
 
-"@equipindustry/prettierrc@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@equipindustry/prettierrc/-/prettierrc-0.1.0.tgz#5960c9b77f284ea894467456f0227224a3335923"
-  integrity sha512-MQNW4aVCyWV/b7fV9Ymz9pPlTnRwonrWDC68uMnBdilW6FwxjjmKh+a/AWseJfpf1wP2gbIrDRoQ+6HhEANXxg==
+"@equipindustry/prettierrc@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@equipindustry/prettierrc/-/prettierrc-0.1.1.tgz#ed4d5ba00ea765d8d008a2917f25baf8f7b0e0e6"
+  integrity sha512-Jov3dlvmOFOngluaDXSL8lQZTZyHTQJX0+kgDolkmGxEqmieHvyoWac0w0fNcjVQb/3vJ25KHvWGOBldjPU/Fg==
 
 "@iarna/cli@^1.2.0":
   version "1.2.0"
