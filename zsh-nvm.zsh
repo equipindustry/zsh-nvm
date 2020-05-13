@@ -32,6 +32,7 @@ function nvm::packages {
         bit-bin \
         @compare/github \
         codesandbox \
+        lerna \
         commitizen
 
     message_success "Installed packages for ${nvm_package_name}"
