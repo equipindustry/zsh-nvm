@@ -172,8 +172,8 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
    :target: https://github.com/equipindustry/zsh-nvm/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
-.. |Fossa| image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm.svg?type=shield
-   :target: https://app.fossa.io/projects/git%2Bgithub.com%2Fluismayta%2Fzsh-nvm?ref=badge_shield
+.. |Fossa| image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fequipindustry%2Fzsh-nvm.svg?type=shield
+   :target: https://app.fossa.io/projects/git%2Bgithub.com%2Fequipindustry%2Fzsh-nvm?ref=badge_shield
 
 .. Team:
 .. |Luis Mayta| image:: https://github.com/luismayta.png?size=100
