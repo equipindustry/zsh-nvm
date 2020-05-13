@@ -3,7 +3,7 @@
   "name": "zsh-nvm",
   "version": "0.1.1",
   "description": "nvm for zsh",
-  "repository": "ssh://git@github.com/luismayta/zsh-nvm.git",
+  "repository": "ssh://git@github.com/equipindustry/zsh-nvm.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "MIT",
   "scripts": {
