@@ -33,7 +33,8 @@ function nvm::packages {
         @compare/github \
         codesandbox \
         lerna \
-        commitizen
+        commitizen \
+        get-graphql-scheme
 
     message_success "Installed packages for ${nvm_package_name}"
 }
