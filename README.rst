@@ -1,9 +1,9 @@
 zsh-nvm
 =======
 
-|Build Status| |GitHub issues| |GitHub license| |Fossa|
-
 nvm for zsh
+
+|Build Status| |GitHub issues| |GitHub license| |Fossa|
 
 :Version: 0.1.1
 :Web: https://github.com/equipindustry/zsh-nvm
