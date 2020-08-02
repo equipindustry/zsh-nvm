@@ -41,7 +41,8 @@ function nvm::packages {
         lerna \
         commitizen \
         @compare/github \
-        get-graphql-scheme
+        get-graphql-scheme \
+        surge
 
     message_success "Installed packages for ${nvm_package_name}"
 }
