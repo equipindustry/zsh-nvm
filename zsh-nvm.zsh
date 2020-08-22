@@ -33,6 +33,7 @@ function nvm::packages {
         next webpack \
         standardx \
         javascript-typescript-langserver \
+        typescript-language-server \
         npm-check-updates \
         js-to-ts-converter \
         bit-bin \
