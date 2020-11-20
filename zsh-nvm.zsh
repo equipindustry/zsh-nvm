@@ -42,7 +42,7 @@ function nvm::packages {
         lerna \
         commitizen \
         @compare/github \
-        get-graphql-scheme \
+        get-graphql-schema \
         surge
 
     message_success "Installed packages for ${nvm_package_name}"
@@ -65,6 +65,7 @@ function nvm::post_install {
     done
     nvm install --lts
     nvm use --lts --default
+    nvm alias default "$(nvm version-remote --lts)"
     message_success "Success Install ${nvm_package_name}"
 }
 
